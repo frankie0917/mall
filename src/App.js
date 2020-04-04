@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Grommet } from "grommet";
+import Home from "./Home/Home";
+
+const theme = {
+  global: {
+    font: {
+      family: "Microsoft Ya-Hei",
+      size: "18px",
+      height: "20px"
+    },
+    colors: {
+      main: "#fec7d7",
+      white: "#fffffe",
+      secondary: "#d9d4e7",
+      black: "#0e172c",
+      tertiary: "#a786df"
+    },
+    focus:{
+      border:{
+        color: 'rgba(0,0,0,0)'
+      }
+    }
+  }
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grommet theme={theme}>
+        <Home></Home>
+    </Grommet>
   );
 }
 

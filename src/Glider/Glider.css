@@ -1,0 +1,19 @@
+.glide__slides{
+  width: 100%;
+}
+
+.glide__arrows,
+.glide__bullets{
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.glide:hover .glide__arrows,
+.glide:hover .glide__bullets
+{
+  opacity: 1;
+}
+
+.glide__arrow{
+  padding: 3px 5px;
+}

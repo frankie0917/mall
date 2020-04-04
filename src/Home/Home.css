@@ -1,0 +1,31 @@
+.NavLink{
+  transition:  all ease .1s;
+}
+
+.NavLink span{
+
+  position: relative;
+  top: -0.2rem;
+  margin-left: .5rem;
+}
+
+.NavLink:hover{
+  transform: translateY(.1rem);
+}
+
+.tmpSlide{
+  height: 500px;
+}
+
+.tmpSlideRec{
+  height: 300px;
+}
+
+.tmpSlide,.tmpSlideRec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
